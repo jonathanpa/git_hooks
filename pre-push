@@ -1,0 +1,9 @@
+#!/bin/bash
+
+rspec
+
+if [ $? -ne 0 ]; then
+  echo "The tests have failed, forbidden to push !"
+  exit 1
+fi
+
