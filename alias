@@ -1,0 +1,2 @@
+[alias]
+ xpush = !git push $1 $2 && git push heroku $2
