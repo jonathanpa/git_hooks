@@ -1,2 +1,2 @@
 [alias]
- xpush = !git push $1 $2 && git push heroku $2
+ xpush = "!f() { git push $1 $2; echo \"Pushing to heroku $2 ...\"; git push heroku $2 --no-verify; }; f"
